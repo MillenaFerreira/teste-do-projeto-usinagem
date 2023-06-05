@@ -2,7 +2,6 @@ create database db_projeto_usinagem_teste_inserts;
 
 use db_projeto_usinagem_teste_inserts;
 
-
 show tables;
 
 # TBL_MATERIA
@@ -139,7 +138,7 @@ create table tbl_tarefa(
 # TBL_REGISTRO_TEMPO
 create table tbl_registro_tempo(
 	id int not null auto_increment primary key,
-    data date not null,
+    data_inicio date not null,
     duracao_inicio time not null,
     duracao_termino time not null,
     desconto time not null,
@@ -306,7 +305,7 @@ create table tbl_professor_turma_materia_curso(
 
 show tables;
 
-
+desc tbl_curso;
 
 
 alter table tbl_curso
